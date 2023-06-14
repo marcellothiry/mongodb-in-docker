@@ -3,7 +3,7 @@
 This is the complementary repository for the video [How to run MongoDB in Docker: dev setups (Windows, Mac or Linux)](https://www.youtube.com/watch?v=cfmPk93mOeo) (channel
 [@fromDev2Dev](https://www.youtube.com/@fromDev2Dev)).
 
-[![How to run MongoDB in Docker: dev setups](https://img.youtube.com/vi/73NQuTACyus/0.jpg)](https://www.youtube.com/watch?v=cfmPk93mOeo)
+[![How to run MongoDB in Docker: dev setups](https://img.youtube.com/vi/cfmPk93mOeo/0.jpg)](https://www.youtube.com/watch?v=cfmPk93mOeo)
 
 ```
 docker images --filter "reference=mongo*"
