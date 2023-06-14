@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+
+  mongo0:
+    image: mongo
+    hostname: mongo0
+    container_name: mongo0
+    restart: always
+    ports:
+      - '27023:27017'
+    volumes:
+      - ~/dev/mongodb/data/m4-0:/data/db
+    entrypoint: ['/usr/bin/mongod', '--bind_ip_all', '--replSet', 'rs0']
+
+  mongo1:
+    image: mongo
+    hostname: mongo1
+    container_name: mongo1
+    restart: always
+    ports:
+      - '27024:27017'
+    volumes:
+      - ~/dev/mongodb/data/m4-1:/data/db
+    entrypoint: ['/usr/bin/mongod', '--bind_ip_all', '--replSet', 'rs0']
+
+  mongo2:
+    image: mongo
+    hostname: mongo2
+    container_name: mongo2
+    restart: always
+    ports:
+      - '27025:27017'
+    volumes:
+      - ~/dev/mongodb/data/m4-2:/data/db
+    entrypoint: ['/usr/bin/mongod', '--bind_ip_all', '--replSet', 'rs0']
